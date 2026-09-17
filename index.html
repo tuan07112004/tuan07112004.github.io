@@ -1,0 +1,810 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#08162f" />
+  <meta name="description" content="Thiệp mời lễ tốt nghiệp của Đỗ Minh Tuấn — Trường Đại học Thủy Lợi, 23.09.2026." />
+  <meta property="og:title" content="Thiệp mời lễ tốt nghiệp — Đỗ Minh Tuấn" />
+  <meta property="og:description" content="Trân trọng kính mời bạn đến chung vui lễ tốt nghiệp tại Đại học Thủy Lợi." />
+  <title>Thiệp mời lễ tốt nghiệp — Đỗ Minh Tuấn</title>
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%2309183a'/%3E%3Cpath fill='%23d4b56a' d='M8 26 32 14l24 12-24 12L8 26Zm12 8v11c8 6 16 6 24 0V34L32 40 20 34Z'/%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,400;0,500;0,600;0,700&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,500;1,600&family=Great+Vibes&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --navy: #10244a;
+      --navy-deep: #071427;
+      --ink: #1c2744;
+      --gold: #c4a35a;
+      --gold-soft: #e6d3a3;
+      --paper: #fbf8f2;
+      --muted: #6a7388;
+      --line: rgba(16, 36, 74, .12);
+    }
+    * { box-sizing: border-box; }
+    html, body { margin: 0; min-height: 100%; max-width: 100%; overflow-x: hidden; }
+    html { background: var(--navy-deep); scroll-behavior: smooth; }
+    body {
+      color: var(--ink);
+      font-family: "Be Vietnam Pro", sans-serif;
+      background:
+        radial-gradient(1200px 520px at 50% -10%, #2a4a7d 0%, transparent 58%),
+        radial-gradient(circle at 8% 92%, #1a2f55 0%, transparent 36%),
+        radial-gradient(circle at 94% 18%, #223960 0%, transparent 32%),
+        var(--navy-deep);
+    }
+    body::before, body::after {
+      content: "";
+      position: fixed;
+      width: 180px;
+      height: 180px;
+      pointer-events: none;
+      opacity: .22;
+      background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 120 120'%3E%3Cpath fill='%23d4b56a' d='M10 52 L60 28 L110 52 L60 76 Z'/%3E%3Cpath fill='%2309183a' d='M38 62 v18 c12 10 32 10 44 0 V62 L60 72 Z'/%3E%3Ccircle cx='84' cy='44' r='6' fill='%2309183a'/%3E%3Crect x='82' y='18' width='4' height='28' fill='%2309183a'/%3E%3C/svg%3E") no-repeat center / contain;
+    }
+    body::before { top: 18px; left: -28px; transform: rotate(-18deg); }
+    body::after { right: -20px; bottom: 8%; transform: rotate(24deg) scaleX(-1); }
+    .invite {
+      position: relative;
+      width: min(100%, 1240px);
+      min-height: 100svh;
+      margin: 0 auto;
+      overflow: hidden;
+      background: var(--paper);
+      box-shadow: 0 30px 80px rgba(0, 0, 0, .45);
+    }
+    .silk {
+      background:
+        radial-gradient(120% 70% at 50% -20%, #fff 0%, transparent 56%),
+        linear-gradient(180deg, #f4efe6 0%, #fff 38%, #f7f2ea 100%);
+    }
+    .ornament {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: var(--gold);
+    }
+    .ornament i {
+      width: 54px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, var(--gold), transparent);
+    }
+    .gate {
+      position: fixed;
+      inset: 0;
+      z-index: 40;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+      background:
+        radial-gradient(circle at 50% 30%, #1d3a68, #071325 72%);
+      color: #fff;
+      text-align: center;
+      transition: opacity .7s ease, visibility .7s ease;
+    }
+    .gate.is-open { opacity: 0; visibility: hidden; pointer-events: none; }
+    .gate-card {
+      width: min(100%, 420px);
+      padding: 42px 24px 36px;
+      border: 1px solid rgba(212, 181, 106, .35);
+      background: rgba(8, 20, 42, .55);
+      box-shadow: 0 20px 50px rgba(0, 0, 0, .35);
+      backdrop-filter: blur(10px);
+    }
+    .monogram {
+      width: 76px;
+      height: 76px;
+      margin: 0 auto 18px;
+      display: grid;
+      place-items: center;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      box-shadow: 0 0 0 6px rgba(196, 163, 90, .12);
+      color: var(--gold-soft);
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.7rem;
+      letter-spacing: .08em;
+    }
+    .gate p { margin: 0; color: rgba(255,255,255,.72); font-size: .72rem; letter-spacing: .22em; text-transform: uppercase; }
+    .gate h2 { margin: 14px 0 6px; font-family: "Great Vibes", cursive; font-size: clamp(2.4rem, 11vw, 2.85rem); font-weight: 400; color: #fff; line-height: 1.1; }
+    .gate .school-mini { margin-bottom: 28px; letter-spacing: .12em; }
+    .open-btn {
+      width: 100%;
+      border: 0;
+      border-radius: 999px;
+      padding: 14px 18px;
+      background: linear-gradient(180deg, #ead7a4, #c4a35a);
+      color: var(--navy-deep);
+      font: 700 .78rem "Be Vietnam Pro", sans-serif;
+      letter-spacing: .18em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .cover { position: relative; padding: clamp(16px, 2.2vw, 36px) clamp(12px, 2.2vw, 36px) 8px; overflow: visible; }
+    .cover-stage { position: relative; }
+    .cover-head { padding-left: clamp(72px, 19vw, 98px); }
+    .brand {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+    }
+    .brand img { width: clamp(46px, 5.6vw, 68px); height: clamp(46px, 5.6vw, 68px); object-fit: contain; flex-shrink: 0; }
+    .brand p {
+      margin: 0;
+      color: var(--navy);
+      font-size: clamp(.68rem, 2.4vw, .98rem);
+      font-weight: 800;
+      letter-spacing: .08em;
+      line-height: 1.2;
+      text-transform: uppercase;
+      text-align: left;
+    }
+    .brand small { display: block; margin-top: 3px; color: var(--muted); font-size: clamp(.5rem, 1.15vw, .66rem); font-weight: 700; letter-spacing: .14em; }
+    .ceremony {
+      margin: 14px 0 14px;
+      color: var(--navy);
+      text-align: center;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(1.7rem, 6.6vw, 3.5rem);
+      font-weight: 600;
+      letter-spacing: .08em;
+      line-height: .82;
+    }
+    .ceremony span {
+      display: block;
+      margin-top: -4px;
+      font-family: "Great Vibes", cursive;
+      font-size: .72em;
+      font-weight: 400;
+      letter-spacing: .04em;
+      font-style: italic;
+    }
+    .portrait-wrap { position: relative; margin: 6px auto 0; max-width: 920px; }
+    .ribbon {
+      position: absolute;
+      z-index: 3;
+      top: 8px;
+      left: 2px;
+      bottom: 52%;
+      width: clamp(62px, 16.5vw, 78px);
+      height: auto;
+      min-height: 0;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      padding: 14px 6px 30px;
+      color: #f6edd8;
+      background:
+        linear-gradient(90deg, rgba(255,255,255,.1) 0%, transparent 42%, rgba(0,0,0,.18) 100%),
+        linear-gradient(180deg, #2a4478 0%, #122445 42%, #081221 100%);
+      border: 2px solid #d4b56a;
+      box-shadow:
+        0 18px 32px rgba(0,0,0,.32),
+        inset 0 0 0 4px #0c1830,
+        inset 0 0 0 5px rgba(212, 181, 106, .55);
+      transform-origin: top center;
+      will-change: transform;
+    }
+    .ribbon::before {
+      content: "";
+      position: absolute;
+      inset: 5px;
+      border: 1px solid rgba(212, 181, 106, .35);
+      pointer-events: none;
+    }
+    .ribbon::after {
+      content: "";
+      position: absolute;
+      left: 8px;
+      right: 8px;
+      bottom: -20px;
+      height: 22px;
+      background: #081221;
+      clip-path: polygon(0 0, 100% 0, 50% 100%);
+      filter: drop-shadow(0 4px 2px rgba(0,0,0,.2));
+    }
+    .ribbon strong, .ribbon span {
+      position: relative;
+      z-index: 1;
+      display: block;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      white-space: nowrap;
+    }
+    .ribbon strong {
+      flex: 0 0 auto;
+      align-self: center;
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(1.38rem, 4.1vw, 1.9rem);
+      font-weight: 600;
+      letter-spacing: .22em;
+      color: #f7efd8;
+      text-shadow: 0 1px 0 rgba(0,0,0,.35);
+    }
+    .ribbon span {
+      flex: 0 0 auto;
+      align-self: center;
+      font-size: clamp(.5rem, 1.35vw, .64rem);
+      font-weight: 600;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      color: #e6d3a3;
+    }
+    .ribbon i {
+      position: relative;
+      z-index: 1;
+      flex-shrink: 0;
+      align-self: stretch;
+      width: 1px;
+      height: auto;
+      margin: 12px 0 18px;
+      background: linear-gradient(180deg, transparent, #d4b56a, transparent);
+    }
+    .portrait {
+      position: relative;
+      overflow: hidden;
+      aspect-ratio: 4 / 5;
+      height: auto;
+      border-radius: 10px;
+      border: 10px solid #fff;
+      background: #1b2436;
+      box-shadow: 0 18px 40px rgba(16, 36, 74, .16);
+    }
+    .portrait img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: 72% 10%;
+    }
+    .portrait::after {
+      content: "";
+      position: absolute;
+      inset: auto 0 0;
+      height: 38%;
+      background: linear-gradient(180deg, transparent, rgba(7, 18, 39, .55));
+    }
+    .sign-name {
+      position: absolute;
+      z-index: 1;
+      right: 3%;
+      bottom: 5%;
+      left: 3%;
+      margin: 0;
+      color: #fff;
+      text-align: center;
+      font-family: "Great Vibes", cursive;
+      font-size: clamp(2.75rem, 8.8vw, 5.4rem);
+      line-height: .9;
+      white-space: nowrap;
+      text-shadow: 0 8px 24px rgba(0,0,0,.35);
+    }
+    .motto {
+      padding: clamp(28px, 4vw, 48px) 28px 12px;
+      text-align: center;
+    }
+    .motto p {
+      margin: 0;
+      color: var(--navy);
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(1.35rem, 3.2vw, 2.05rem);
+      letter-spacing: .18em;
+      text-transform: uppercase;
+    }
+    .motto span { display: block; margin-top: 10px; color: var(--muted); font-size: clamp(.82rem, 1.7vw, 1.05rem); letter-spacing: .16em; text-transform: uppercase; }
+    .countdown {
+      margin: 22px auto 0;
+      width: fit-content;
+      max-width: calc(100% - 32px);
+      padding: 12px 16px;
+      border-radius: 999px;
+      background: rgba(16, 36, 74, .06);
+      color: var(--navy);
+      text-align: center;
+      font-size: clamp(.86rem, 1.7vw, 1.1rem);
+      font-weight: 600;
+      letter-spacing: .04em;
+      line-height: 1.45;
+    }
+    .details {
+      position: relative;
+      display: grid;
+      gap: 16px;
+      padding: clamp(24px, 3vw, 48px) clamp(18px, 3vw, 40px) clamp(32px, 4vw, 56px);
+      background: linear-gradient(180deg, #f4efe6, #e9e1d2 100%);
+    }
+    .invite-card, .letter-card, .rsvp-card {
+      position: relative;
+      z-index: 1;
+      padding: clamp(28px, 3vw, 42px) clamp(22px, 3vw, 36px) 28px;
+      border-radius: 22px;
+      background: rgba(255,255,255,.94);
+      box-shadow: 0 18px 50px rgba(16, 36, 74, .12);
+    }
+    .kicker {
+      margin: 0;
+      color: var(--muted);
+      text-align: center;
+      font-size: .7rem;
+      font-weight: 700;
+      letter-spacing: .22em;
+      text-transform: uppercase;
+    }
+    .guest-name {
+      margin: 8px 0 6px;
+      text-align: center;
+      font-family: "Great Vibes", cursive;
+      font-size: 2.7rem;
+      font-weight: 400;
+      color: #5d6a86;
+    }
+    .when { margin: 22px 0 8px; text-align: center; }
+    .when-time {
+      margin: 0 0 12px;
+      color: var(--navy);
+      font-size: .78rem;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+    }
+    .when-date {
+      display: grid;
+      grid-template-columns: 1fr auto 1fr;
+      gap: 12px;
+      align-items: center;
+    }
+    .when-date b {
+      color: var(--navy);
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(3.4rem, 8vw, 5.2rem);
+      font-weight: 600;
+      line-height: .75;
+    }
+    .when-date span {
+      color: var(--navy);
+      font-size: .62rem;
+      font-weight: 700;
+      letter-spacing: .16em;
+      text-transform: uppercase;
+      border-top: 1px solid #d8c9a4;
+      border-bottom: 1px solid #d8c9a4;
+      padding: 8px 0;
+    }
+    .venue { margin: 22px 0 0; text-align: center; }
+    .venue small { display: block; color: var(--muted); font-size: .68rem; letter-spacing: .08em; }
+    .venue h3 {
+      margin: 8px 0 6px;
+      color: var(--navy);
+      font-family: "Cormorant Garamond", serif;
+      font-size: 1.55rem;
+      font-weight: 600;
+      line-height: 1.2;
+    }
+    .film-name {
+      margin: 4px 0 8px;
+      color: var(--navy);
+      font-family: "Cormorant Garamond", serif;
+      font-size: clamp(3.2rem, 9vw, 5.4rem);
+      font-weight: 600;
+      letter-spacing: .08em;
+      line-height: .9;
+      text-transform: uppercase;
+    }
+    .map {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 18px;
+      color: var(--navy);
+      font-size: .7rem;
+      font-weight: 800;
+      letter-spacing: .14em;
+      text-decoration: none;
+      text-transform: uppercase;
+    }
+    .map svg { width: 16px; height: 16px; }
+    .alt-card {
+      position: relative;
+      z-index: 1;
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      padding: clamp(28px, 3vw, 42px) clamp(22px, 3vw, 36px) 0;
+      border-radius: 22px;
+      background: #fff;
+      box-shadow: 0 18px 50px rgba(16, 36, 74, .1);
+    }
+    .alt-card .kicker { color: #8a7344; }
+    .poster {
+      margin: 18px calc(-1 * clamp(22px, 3vw, 36px)) 0;
+      overflow: hidden;
+    }
+    .poster img {
+      display: block;
+      width: 100%;
+      height: min(58vw, 480px);
+      object-fit: cover;
+      object-position: center 45%;
+    }
+    .letter, .rsvp { padding: 8px clamp(18px, 3vw, 40px) 56px; background: linear-gradient(180deg, #f7f3ec, #fff); }
+    .letter-title {
+      margin: 4px 0 22px;
+      padding: 0 10px;
+      text-align: center;
+      color: var(--navy);
+      font-family: "Great Vibes", cursive;
+      font-size: clamp(2.8rem, 7vw, 4.4rem);
+      font-weight: 400;
+      line-height: 1.3;
+    }
+    .letter-card p {
+      margin: 0 0 16px;
+      color: #3d4a63;
+      font-size: clamp(.9rem, 1.4vw, 1.05rem);
+      line-height: 1.85;
+      text-align: left;
+    }
+    .letter-card p.letter-title {
+      font-size: clamp(2.8rem, 7vw, 4.4rem);
+      line-height: 1.3;
+      text-align: center;
+      color: var(--navy);
+    }
+    .letter-card p:last-child { margin-bottom: 0; }
+    .rsvp-copy { margin: 0 0 22px; text-align: center; color: var(--navy); font-size: clamp(1.15rem, 2.6vw, 1.45rem); line-height: 1.7; }
+    .rsvp-copy strong { display: block; margin-top: 8px; font-size: 1.15em; }
+    form { display: grid; gap: 12px; }
+    input, textarea, select, button {
+      font: inherit;
+    }
+    input, textarea, select {
+      width: 100%;
+      border: 1px solid #d5dbe8;
+      border-radius: 999px;
+      padding: 14px 18px;
+      background: #fff;
+      color: var(--ink);
+      outline: none;
+    }
+    textarea { min-height: 96px; border-radius: 22px; resize: vertical; }
+    input:focus, textarea:focus, select:focus { border-color: var(--navy); }
+    .submit {
+      border: 0;
+      border-radius: 999px;
+      padding: 15px 18px;
+      background: linear-gradient(180deg, #1a3568, #0d2044);
+      color: #fff;
+      font-size: .82rem;
+      font-weight: 800;
+      letter-spacing: .2em;
+      text-transform: uppercase;
+      cursor: pointer;
+    }
+    .submit:disabled { opacity: .65; cursor: wait; }
+    .thanks {
+      margin: 36px 0 12px;
+      color: var(--navy);
+      text-align: center;
+      font-family: "Great Vibes", cursive;
+      font-size: clamp(3.4rem, 8vw, 5.2rem);
+      line-height: 1;
+    }
+    .success { display: none; margin: 0; text-align: center; color: var(--navy); line-height: 1.7; }
+    .rsvp.is-done form { display: none; }
+    .rsvp.is-done .success { display: block; margin-bottom: 16px; }
+    .music {
+      position: fixed;
+      right: 16px;
+      bottom: 22px;
+      z-index: 30;
+      width: 48px;
+      height: 48px;
+      display: grid;
+      place-items: center;
+      border: 0;
+      border-radius: 50%;
+      background: rgba(255,255,255,.92);
+      box-shadow: 0 10px 24px rgba(0,0,0,.18);
+      color: var(--navy);
+      cursor: pointer;
+    }
+    .music svg { width: 20px; height: 20px; }
+    .music .icon-off { display: none; }
+    .music.is-on .icon-note { animation: spin 6s linear infinite; }
+    .music:not(.is-on) .icon-note { display: none; }
+    .music:not(.is-on) .icon-off { display: block; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .reveal {
+      opacity: 0;
+      transform: translate3d(0, 28px, 0);
+      transition: opacity .85s cubic-bezier(.16, 1, .3, 1), transform .85s cubic-bezier(.16, 1, .3, 1);
+      will-change: opacity, transform;
+    }
+    .reveal.is-in {
+      opacity: 1;
+      transform: none;
+    }
+    @media (min-width: 768px) {
+      body { padding: 28px 20px 48px; }
+      .invite { border-radius: 28px; min-height: auto; }
+    }
+    @media (min-width: 1100px) {
+      body { padding: 36px 24px 56px; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      .music.is-on svg, .gate, .ribbon { animation: none; transition: none; }
+      .reveal { opacity: 1; transform: none; transition: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="gate" id="gate">
+    <div class="gate-card">
+      <div class="monogram">MT</div>
+      <p>Thiệp mời lễ tốt nghiệp</p>
+      <h2>Đỗ Minh Tuấn</h2>
+      <p class="school-mini">Đại học Thủy Lợi</p>
+      <button class="open-btn" id="openBtn" type="button">Mở thiệp</button>
+    </div>
+  </div>
+
+  <main class="invite" aria-label="Thiệp mời tốt nghiệp của Đỗ Minh Tuấn">
+    <section class="cover silk">
+      <div class="cover-stage">
+      <aside class="ribbon" aria-hidden="true">
+        <span>Class of 2026</span>
+        <i></i>
+        <strong>DO MINH TUAN</strong>
+      </aside>
+      <div class="cover-head">
+      <div class="brand">
+        <img src="images/tlu-logo.png" alt="Logo Trường Đại học Thủy Lợi" />
+        <p>Trường Đại học<br>Thủy Lợi<small>Thuy Loi University</small></p>
+      </div>
+      <h1 class="ceremony">GRADUATION<span>Ceremony</span></h1>
+      </div>
+      <div class="portrait-wrap">
+        <div class="portrait">
+          <img src="images/nhon-tuan-portrait.png" alt="Đỗ Minh Tuấn" />
+          <p class="sign-name">Đỗ Minh Tuấn</p>
+        </div>
+      </div>
+      </div>
+      <div class="motto">
+        <div class="ornament"><i></i>✦<i></i></div>
+        <p>Every end is<span>a new beginning</span></p>
+        <div class="countdown" id="countdown">Đếm ngược tới ngày lễ</div>
+      </div>
+    </section>
+
+    <section class="details">
+      <article class="invite-card">
+        <p class="kicker">Thân mời</p>
+        <p class="guest-name">Bạn</p>
+        <div class="ornament"><i></i>✦<i></i></div>
+        <div class="when">
+          <p class="when-time">12:30, Thứ Tư</p>
+          <div class="when-date"><span>Tháng 09</span><b>23</b><span>Năm 2026</span></div>
+        </div>
+        <div class="venue">
+          <small>Tại địa điểm</small>
+          <h3>Trường Đại học Thủy Lợi</h3>
+          <p>175 Tây Sơn, Đống Đa, Hà Nội</p>
+          <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Tr%C6%B0%E1%BB%9Dng%20%C4%90%E1%BA%A1i%20h%E1%BB%8Dc%20Th%E1%BB%A7y%20L%E1%BB%A3i%2C%20175%20T%C3%A2y%20S%C6%A1n%2C%20%C4%90%E1%BB%91ng%20%C4%90a%2C%20H%C3%A0%20N%E1%BB%99i">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>
+            Xem chỉ đường
+          </a>
+        </div>
+      </article>
+
+      <article class="alt-card">
+        <p class="kicker">Lời hẹn thay thế</p>
+        <div class="when">
+          <p class="when-time">20:00, Buổi tối</p>
+          <div class="when-date"><span>Tháng 09</span><b>24</b><span>Năm 2026</span></div>
+        </div>
+        <div class="venue">
+          <small>Cùng nhau đi xem phim</small>
+          <h3 class="film-name">Avengers</h3>
+          <a class="map" target="_blank" rel="noopener" href="https://www.google.com/maps/search/?api=1&amp;query=Beta%20Cinemas%20T%C3%A2y%20S%C6%A1n%2C%20H%C3%A0%20N%E1%BB%99i">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s7-6.2 7-11a7 7 0 1 0-14 0c0 4.8 7 11 7 11Z"/><circle cx="12" cy="10" r="2.4"/></svg>
+            Beta Tây Sơn · Chỉ đường
+          </a>
+        </div>
+        <figure class="poster">
+          <img src="images/avengers-poster.jpg" alt="Avengers: Hồi Kết — suất 20:00 ngày 24.09.2026 tại Beta Tây Sơn" />
+        </figure>
+      </article>
+    </section>
+
+    <section class="letter">
+      <article class="letter-card">
+        <p class="letter-title">Khép lại một chặng — mở ra hành trình mới</p>
+        <p>Bốn năm Đại học Thủy Lợi đi qua nhanh hơn mình nghĩ. Có những ngày chỉ muốn về nhà cho kịp, cũng có những buổi mình biết ơn vì đã chọn đúng nơi để lớn lên, để học cách chịu trách nhiệm với chính mình.</p>
+        <p>Tốt nghiệp không phải là điểm kết. Đó chỉ là lúc mình được nhìn lại những người đã đi cùng một đoạn đường. Cảm ơn bạn vì đã xuất hiện trong hành trình ấy — dù nhiều hay ít, dù ồn ào hay rất dịu dàng.</p>
+        <p>Ngày 23 tháng 9, mình sẽ khép lại một chương tại Harvard Tây Sơn. Sự hiện diện của bạn sẽ làm ngày ấy trọn vẹn hơn nhiều. Nếu chưa tiện, tối hôm sau mình vẫn để dành một lời hẹn cùng nhau đi xem phim.</p>
+        <p>Mong sau này mình và bạn vẫn ổn, vẫn nhớ nhau, và vẫn còn dịp gặp lại.</p>
+      </article>
+    </section>
+
+    <section class="rsvp" id="rsvp">
+      <article class="rsvp-card">
+        <p class="rsvp-copy">Vui lòng xác nhận sự tham dự của bạn để mình chuẩn bị đón tiếp một cách chu đáo.<strong>Trân trọng cảm ơn!</strong></p>
+        <p class="success" id="success">Mình đã nhận được lời xác nhận. Hẹn gặp bạn trong ngày đặc biệt này.</p>
+        <form id="rsvpForm">
+          <input type="hidden" name="_subject" value="Xác nhận tham dự lễ tốt nghiệp — Đỗ Minh Tuấn" />
+          <input type="hidden" name="_template" value="table" />
+          <input type="hidden" name="_captcha" value="false" />
+          <input name="name" required placeholder="Tên của bạn" autocomplete="name" />
+          <textarea name="message" placeholder="Lời nhắn gửi"></textarea>
+          <select name="attend" required>
+            <option value="" selected disabled>Xác nhận tham dự?</option>
+            <option>Dự lễ tốt nghiệp 23/09</option>
+            <option>Đi xem phim 24/09 · Beta Tây Sơn 20:00</option>
+            <option>Cả hai đều được</option>
+            <option>Rất tiếc, mình chưa thể đến</option>
+          </select>
+          <button class="submit" type="submit">Xác nhận</button>
+        </form>
+      </article>
+      <p class="thanks">Thank you!</p>
+    </section>
+  </main>
+
+  <button class="music" id="musicBtn" type="button" aria-label="Tắt nhạc nền">
+    <svg class="icon-note" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="18" r="2.4"/><circle cx="16" cy="16" r="2.4"/><path d="M8.4 18V7.5l10-2V16"/></svg>
+    <svg class="icon-off" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><circle cx="6" cy="18" r="2.4"/><circle cx="16" cy="16" r="2.4"/><path d="M8.4 18V7.5l10-2V16"/><path d="M4 5l16 16"/></svg>
+  </button>
+  <audio id="bgm" src="audio/nen.mp3" loop preload="auto" playsinline></audio>
+
+  <script>
+    const ceremonyAt = new Date("2026-09-23T12:30:00+07:00");
+    const gate = document.getElementById("gate");
+    const audio = document.getElementById("bgm");
+    const musicBtn = document.getElementById("musicBtn");
+    const countdown = document.getElementById("countdown");
+    audio.volume = 1;
+    let audioCtx = null;
+    function boostMusic() {
+      if (audioCtx) return;
+      const Ctx = window.AudioContext || window.webkitAudioContext;
+      if (!Ctx) return;
+      audioCtx = new Ctx();
+      const source = audioCtx.createMediaElementSource(audio);
+      const gain = audioCtx.createGain();
+      gain.gain.value = 6;
+      source.connect(gain).connect(audioCtx.destination);
+    }
+    function setMusic(on) {
+      musicBtn.classList.toggle("is-on", on);
+      musicBtn.setAttribute("aria-label", on ? "Tắt nhạc nền" : "Bật nhạc nền");
+    }
+    async function playMusic() {
+      try {
+        boostMusic();
+        if (audioCtx && audioCtx.state === "suspended") await audioCtx.resume();
+        await audio.play();
+        setMusic(true);
+      } catch (_) { setMusic(false); }
+    }
+    function openInvite(withMusic) {
+      gate.classList.add("is-open");
+      document.documentElement.style.overflow = "";
+      if (withMusic) playMusic();
+      initReveal();
+    }
+    document.getElementById("openBtn").addEventListener("click", () => openInvite(true));
+    if (/[?&]open=1\b/.test(location.search)) openInvite(false);
+    else document.documentElement.style.overflow = "hidden";
+    musicBtn.addEventListener("click", () => {
+      if (audio.paused) playMusic();
+      else { audio.pause(); setMusic(false); }
+    });
+
+    function tick() {
+      const diff = ceremonyAt - new Date();
+      if (diff <= 0) { countdown.textContent = "Hôm nay là ngày lễ tốt nghiệp"; return; }
+      const d = Math.floor(diff / 86400000);
+      const h = Math.floor(diff / 3600000) % 24;
+      const m = Math.floor(diff / 60000) % 60;
+      const s = Math.floor(diff / 1000) % 60;
+      countdown.textContent = `Còn ${d} ngày ${h} giờ ${m} phút ${s} giây nữa gặp nhau`;
+    }
+    tick();
+    setInterval(tick, 1000);
+
+    const ribbon = document.querySelector(".ribbon");
+    let lastY = window.scrollY;
+    let target = 0;
+    let current = 0;
+    let idle = 0;
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    function flutter() {
+      if (!ribbon || reduceMotion) return;
+      idle += 0.016;
+      const wave = Math.sin(idle) * 0.7 + Math.sin(idle * 0.53) * 0.35;
+      target *= 0.92;
+      current += (target + wave - current) * 0.07;
+      ribbon.style.transform = `rotate(${current.toFixed(3)}deg)`;
+      requestAnimationFrame(flutter);
+    }
+    window.addEventListener("scroll", () => {
+      const y = window.scrollY;
+      target = Math.max(-5.5, Math.min(5.5, target + (y - lastY) * 0.028));
+      lastY = y;
+    }, { passive: true });
+    flutter();
+    let revealReady = false;
+    function initReveal() {
+      if (revealReady) return;
+      revealReady = true;
+      const nodes = document.querySelectorAll(".brand, .ceremony, .portrait-wrap, .motto .ornament, .motto p, .countdown, .invite-card, .alt-card, .letter-card > p, .rsvp-card, .thanks");
+      nodes.forEach((el) => el.classList.add("reveal"));
+      if (reduceMotion || !("IntersectionObserver" in window)) {
+        nodes.forEach((el) => el.classList.add("is-in"));
+        return;
+      }
+      const io = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-in");
+          io.unobserve(entry.target);
+        });
+      }, { threshold: 0.16, rootMargin: "0px 0px -18% 0px" });
+      const bottomIo = new IntersectionObserver((entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          entry.target.classList.add("is-in");
+          bottomIo.unobserve(entry.target);
+        });
+      }, { threshold: 0.01, rootMargin: "0px 0px 0px 0px" });
+      nodes.forEach((el, i) => {
+        if (el.closest(".cover")) {
+          setTimeout(() => el.classList.add("is-in"), 90 + i * 90);
+          return;
+        }
+        if (el.classList.contains("thanks") || el.classList.contains("rsvp-card")) {
+          bottomIo.observe(el);
+          return;
+        }
+        io.observe(el);
+      });
+    }
+    const form = document.getElementById("rsvpForm");
+    const rsvp = document.getElementById("rsvp");
+    const submitBtn = form.querySelector(".submit");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      const data = Object.fromEntries(new FormData(form).entries());
+      submitBtn.disabled = true;
+      submitBtn.textContent = "Đang gửi...";
+      try {
+        const res = await fetch("https://formsubmit.co/ajax/dominhtuan002003@gmail.com", {
+          method: "POST",
+          headers: { "Content-Type": "application/json", Accept: "application/json" },
+          body: JSON.stringify({
+            "Tên": data.name,
+            "Lời nhắn": data.message || "(không có)",
+            "Tham dự": data.attend,
+            _subject: "Xác nhận tham dự lễ tốt nghiệp — Đỗ Minh Tuấn",
+            _template: "table",
+            _captcha: "false"
+          })
+        });
+        if (!res.ok) throw new Error("send failed");
+        rsvp.classList.add("is-done");
+      } catch (_) {
+        submitBtn.disabled = false;
+        submitBtn.textContent = "Xác nhận";
+        alert("Chưa gửi được. Kiểm tra mạng rồi thử lại giúp mình nhé.");
+      }
+    });
+  </script>
+</body>
+</html>
